@@ -1,5 +1,5 @@
 # caas-api-gateway
-📦 Service Bindings (for local dev)
+Service Bindings (for local dev)
 Service	Port	Notes
 ```
 caas-eks-api-go	:8081	Run with make run from EKS repo
@@ -8,7 +8,7 @@ caas-api-gateway	:8080	Unified access point
 ```
 Update their main.go as needed to listen on :8081 and :8082.
 
-🌐 Access Points
+Access Points
 API Path	Target
 ```
 /aws/clusters	Proxies to EKS API
@@ -18,7 +18,7 @@ API Path	Target
 ```
 /	You can add a root UI
 
-🔧 Optional: Merged Swagger UI
+Merged Swagger UI
 If you want to merge both Swagger definitions:
 
 Export EKS and AKS Swagger as JSON:
